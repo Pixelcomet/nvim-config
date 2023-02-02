@@ -1,5 +1,6 @@
 set langmenu=en_US
 let $LANG = 'en_US'
+set spell spelllang=en_us,de_de
 
 lua require("init")
 
@@ -31,6 +32,14 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+vnoremap <Up> <Nop>
+vnoremap <Down> <Nop>
+vnoremap <Left> <Nop>
+vnoremap <Right> <Nop>
+inoremap <Up> <Nop>
+inoremap <Down> <Nop>
+inoremap <Left> <Nop>
+inoremap <Right> <Nop>
 nnoremap <C-h> :tabprevious<CR>                                                                            
 nnoremap <C-l> :tabnext<CR>
 nnoremap <C-j> :bprev<CR>                                                                            
@@ -45,3 +54,5 @@ nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
 nnoremap <C-j> :bprev<CR>                                                                            
 nnoremap <C-k> :bnext<CR>
+
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()

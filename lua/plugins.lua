@@ -65,6 +65,11 @@ return require('packer').startup(function(use)
 	use { 'ryanoasis/vim-devicons' }
 	use { 'jiangmiao/auto-pairs' }
 	use { 'frazrepo/vim-rainbow' }
+	use { 'rust-lang/rust.vim' }
+	use { 'phaazon/hop.nvim' }
+	require 'hop'.setup()
+	use { 'dusans/vim-hardmode' }
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if packer_bootstrap then

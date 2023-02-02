@@ -1,6 +1,3 @@
 require("plugins")
 require("keymap")
-require("plugin_conf/colorscheme")
-require("plugin_conf/treesitter")
-require("plugin_conf/lsp")
-require("plugin_conf/toggleterm")
+require("plugin_conf/require_all")
