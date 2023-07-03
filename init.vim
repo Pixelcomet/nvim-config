@@ -1,6 +1,5 @@
 set langmenu=en_US
 let $LANG = 'en_US'
-set spell spelllang=en_us,de_de
 
 lua require("init")
 
@@ -25,7 +24,9 @@ set shiftwidth=4
 set scrolloff=10
 " whenever text is yanked, it also appears in the clipboard, also text from
 " the clipboard can be pasted normally with `p`
-set clipboard=unnamed
+"  set clipboard=unnamed
+
+let g:rustfmt_autosave = 1
 
 " disables arrow keys in command mode (this is for getting used to it hjkl)
 noremap <Up> <Nop>
